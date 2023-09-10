@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.10-6 编写EmployeeController的登陆方法">
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/backend/js/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/backend/js/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/EmployeeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,7 @@
       <workItem from="1693748616380" duration="2267000" />
       <workItem from="1694101330004" duration="1392000" />
       <workItem from="1694223643603" duration="5043000" />
-      <workItem from="1694262740716" duration="9532000" />
+      <workItem from="1694262740716" duration="12331000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -154,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694318268640</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试">
+      <option name="closed" value="true" />
+      <created>1694319173924</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1694319173924</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +186,8 @@
     <MESSAGE value="2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法" />
     <MESSAGE value="2023.09.10-5 创建common文件夹存放通用类，创建通用返回类R" />
     <MESSAGE value="2023.09.10-6 编写EmployeeController的登陆方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.10-6 编写EmployeeController的登陆方法" />
+    <MESSAGE value="2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

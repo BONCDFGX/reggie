@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法" />
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.10-6 编写EmployeeController的登陆方法">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/backend/js/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/backend/js/request.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +43,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/MavenProject/reggie/src/main/java/com/bonc/reggie/entity",
+    "last_opened_file_path": "D:/MavenProject/reggie/src/main/java/com/bonc/reggie/common",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,6 +56,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\common" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\entity" />
       <recent name="D:\MavenProject\reggie\src\main\resources" />
     </key>
@@ -92,7 +96,7 @@
       <workItem from="1693748616380" duration="2267000" />
       <workItem from="1694101330004" duration="1392000" />
       <workItem from="1694223643603" duration="5043000" />
-      <workItem from="1694262740716" duration="5432000" />
+      <workItem from="1694262740716" duration="9532000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -134,7 +138,23 @@
       <option name="project" value="LOCAL" />
       <updated>1694305483941</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2023.09.10-5 创建common文件夹存放通用类，创建通用返回类R">
+      <option name="closed" value="true" />
+      <created>1694305900212</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1694305900212</updated>
+    </task>
+    <task id="LOCAL-00007" summary="2023.09.10-6 编写EmployeeController的登陆方法">
+      <option name="closed" value="true" />
+      <created>1694318268640</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1694318268640</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +176,9 @@
     <MESSAGE value="2023.09.09-2 导入前端静态资源" />
     <MESSAGE value="2023.09.09-3 编写配置类WebMvcConfig，映射前端资源" />
     <MESSAGE value="2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法" />
+    <MESSAGE value="2023.09.10-5 创建common文件夹存放通用类，创建通用返回类R" />
+    <MESSAGE value="2023.09.10-6 编写EmployeeController的登陆方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.10-6 编写EmployeeController的登陆方法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

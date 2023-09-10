@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.09-3 编写配置类WebMvcConfig，映射前端资源">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/entity/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/mapper/EmployeeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +92,7 @@
       <workItem from="1693748616380" duration="2267000" />
       <workItem from="1694101330004" duration="1392000" />
       <workItem from="1694223643603" duration="5043000" />
-      <workItem from="1694262740716" duration="5074000" />
+      <workItem from="1694262740716" duration="5432000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -133,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694266356035</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法">
+      <option name="closed" value="true" />
+      <created>1694305483941</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1694305483941</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,7 +155,8 @@
     <MESSAGE value="2023.09.02-1 初始化项目" />
     <MESSAGE value="2023.09.09-2 导入前端静态资源" />
     <MESSAGE value="2023.09.09-3 编写配置类WebMvcConfig，映射前端资源" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.09-3 编写配置类WebMvcConfig，映射前端资源" />
+    <MESSAGE value="2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

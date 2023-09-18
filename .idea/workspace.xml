@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.18-15 EmployeeController实现员工分页查询">
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.18-17 添加JacksonObjectMapper类，实现对象映射器，基于jackson将Java对象转为json，或者将json转为Java对象">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/common/JacksonObjectMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/EmployeeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,7 @@
       <workItem from="1694851668800" duration="1182000" />
       <workItem from="1694913403194" duration="4967000" />
       <workItem from="1695038692582" duration="5107000" />
-      <workItem from="1695048948625" duration="177000" />
+      <workItem from="1695048948625" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -248,7 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695047882515</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="2023.09.18-16 EmployeeController实现根据id修改员工信息">
+      <option name="closed" value="true" />
+      <created>1695049328398</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1695049328398</updated>
+    </task>
+    <task id="LOCAL-00017" summary="2023.09.18-17 添加JacksonObjectMapper类，实现对象映射器，基于jackson将Java对象转为json，或者将json转为Java对象">
+      <option name="closed" value="true" />
+      <created>1695049501151</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1695049501151</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +296,9 @@
     <MESSAGE value="2023.09.17-13 完善GlobalExceptionHandler" />
     <MESSAGE value="2023.09.18-14 创建MybatisPlusConfig配置类，配置MybatisPlus的分页插件" />
     <MESSAGE value="2023.09.18-15 EmployeeController实现员工分页查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.18-15 EmployeeController实现员工分页查询" />
+    <MESSAGE value="2023.09.18-16 EmployeeController实现根据id修改员工信息" />
+    <MESSAGE value="2023.09.18-17 添加JacksonObjectMapper类，实现对象映射器，基于jackson将Java对象转为json，或者将json转为Java对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.18-17 添加JacksonObjectMapper类，实现对象映射器，基于jackson将Java对象转为json，或者将json转为Java对象" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

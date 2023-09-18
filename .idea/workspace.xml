@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.17-12 完善GlobalExceptionHandler">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/809b736f-9993-42b3-9577-591a643c9ba2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/809b736f-9993-42b3-9577-591a643c9ba2.xml" afterDir="false" />
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.17-13 完善GlobalExceptionHandler">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/config/MybatisPlusConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/common/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/common/GlobalExceptionHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +125,7 @@
       <workItem from="1694824072226" duration="599000" />
       <workItem from="1694851668800" duration="1182000" />
       <workItem from="1694913403194" duration="4967000" />
-      <workItem from="1695038692582" duration="641000" />
+      <workItem from="1695038692582" duration="2096000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -226,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694943004999</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="2023.09.17-13 完善GlobalExceptionHandler">
+      <option name="closed" value="true" />
+      <created>1695039886527</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1695039886527</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +260,8 @@
     <MESSAGE value="2023.09.11-9 搭建LoginCheckFilter过滤器，检查用户是否登录" />
     <MESSAGE value="2023.09.12-10 完善LoginCheckFilter过滤器，实现检查登录功能" />
     <MESSAGE value="2023.09.17-11 实现employeecontroller添加员工功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.17-11 实现employeecontroller添加员工功能" />
+    <MESSAGE value="2023.09.17-13 完善GlobalExceptionHandler" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.17-13 完善GlobalExceptionHandler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

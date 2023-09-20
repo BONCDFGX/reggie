@@ -1,0 +1,206 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_8\" default=\"true\" project-jdk-name=\"corretto-1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision cd852d3aa05d087f58c594a2f559f26dfa382c78)
++++ .idea/misc.xml	(date 1695086560562)
+@@ -1,3 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+   <component name="MavenProjectsManager">
+@@ -7,7 +8,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"4747c58c-b163-4135-895a-5ccfae0df555\" name=\"Changes\" comment=\"2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/EmployeeController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/EmployeeController.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2UqUPKKYYhGIFSilJhRmmassNXk\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RequestMappingsPanelOrder0\": \"0\",\r\n    \"RequestMappingsPanelOrder1\": \"1\",\r\n    \"RequestMappingsPanelWidth0\": \"75\",\r\n    \"RequestMappingsPanelWidth1\": \"75\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"last_opened_file_path\": \"D:/MavenProject/reggie/src/main/java/com/bonc/reggie/common\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"onboarding.tips.debug.path\": \"D:/MavenProject/reggie/src/main/java/org/example/Main.java\",\r\n    \"settings.editor.selected.configurable\": \"vcs.Git\",\r\n    \"spring.configuration.checksum\": \"3acf5c7b740d6e2538f3a7b88cf069b3\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\MavenProject\\reggie\\src\\main\\java\\com\\bonc\\reggie\\common\" />\r\n      <recent name=\"D:\\MavenProject\\reggie\\src\\main\\java\\com\\bonc\\reggie\\entity\" />\r\n      <recent name=\"D:\\MavenProject\\reggie\\src\\main\\resources\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"D:\\MavenProject\\reggie\\src\\main\\resources\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"ReggieApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"reggie\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.bonc.reggie.ReggieApplication\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.bonc.reggie.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Spring Boot.ReggieApplication\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"4747c58c-b163-4135-895a-5ccfae0df555\" name=\"Changes\" comment=\"\" />\r\n      <created>1693666579077</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1693666579077</updated>\r\n      <workItem from=\"1693666580706\" duration=\"1857000\" />\r\n      <workItem from=\"1693748616380\" duration=\"2267000\" />\r\n      <workItem from=\"1694101330004\" duration=\"1392000\" />\r\n      <workItem from=\"1694223643603\" duration=\"5043000\" />\r\n      <workItem from=\"1694262740716\" duration=\"12331000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"2023.09.02-1 初始化项目\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1693667598087</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1693667598087</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"2023.09.09-2 导入前端静态资源\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1694240661612</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1694240661612</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"2023.09.09-3 编写配置类WebMvcConfig，映射前端资源\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1694240708480</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1694240708480</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"2023.09.09-3 编写配置类WebMvcConfig，映射前端资源\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1694266356035</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1694266356035</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1694305483941</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1694305483941</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"2023.09.10-5 创建common文件夹存放通用类，创建通用返回类R\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1694305900212</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1694305900212</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"2023.09.10-6 编写EmployeeController的登陆方法\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1694318268640</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1694318268640</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1694319173924</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1694319173924</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"9\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"2023.09.02-1 初始化项目\" />\r\n    <MESSAGE value=\"2023.09.09-2 导入前端静态资源\" />\r\n    <MESSAGE value=\"2023.09.09-3 编写配置类WebMvcConfig，映射前端资源\" />\r\n    <MESSAGE value=\"2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法\" />\r\n    <MESSAGE value=\"2023.09.10-5 创建common文件夹存放通用类，创建通用返回类R\" />\r\n    <MESSAGE value=\"2023.09.10-6 编写EmployeeController的登陆方法\" />\r\n    <MESSAGE value=\"2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>\r\n          <line>15</line>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision cd852d3aa05d087f58c594a2f559f26dfa382c78)
++++ .idea/workspace.xml	(date 1695086878950)
+@@ -3,10 +3,34 @@
+   <component name="AutoImportSettings">
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
++  <component name="BranchesTreeState">
++    <expand>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++    </expand>
++    <select>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++    </select>
++  </component>
+   <component name="ChangeListManager">
+     <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/EmployeeController.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -24,36 +48,21 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="ProjectColorInfo">{
+-  &quot;associatedIndex&quot;: 3
+-}</component>
++  <component name="JupyterTrust" id="bd7679b7-dcf6-4534-8b73-ddff6ad461f5" />
+   <component name="ProjectId" id="2UqUPKKYYhGIFSilJhRmmassNXk" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RequestMappingsPanelOrder0": "0",
+-    "RequestMappingsPanelOrder1": "1",
+-    "RequestMappingsPanelWidth0": "75",
+-    "RequestMappingsPanelWidth1": "75",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "git-widget-placeholder": "master",
+-    "last_opened_file_path": "D:/MavenProject/reggie/src/main/java/com/bonc/reggie/common",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "onboarding.tips.debug.path": "D:/MavenProject/reggie/src/main/java/org/example/Main.java",
+-    "settings.editor.selected.configurable": "vcs.Git",
+-    "spring.configuration.checksum": "3acf5c7b740d6e2538f3a7b88cf069b3",
+-    "vue.rearranger.settings.migration": "true"
+-  }
+-}]]></component>
++  <component name="PropertiesComponent">
++    <property name="RequestMappingsPanelOrder0" value="0" />
++    <property name="RequestMappingsPanelOrder1" value="1" />
++    <property name="RequestMappingsPanelWidth0" value="75" />
++    <property name="RequestMappingsPanelWidth1" value="75" />
++    <property name="project.structure.last.edited" value="Project" />
++    <property name="project.structure.proportion" value="0.0" />
++    <property name="project.structure.side.proportion" value="0.0" />
++  </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\common" />
+@@ -67,13 +76,13 @@
+   <component name="RunManager">
+     <configuration name="ReggieApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+       <module name="reggie" />
+-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bonc.reggie.ReggieApplication" />
+       <extension name="coverage">
+         <pattern>
+           <option name="PATTERN" value="com.bonc.reggie.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
++      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bonc.reggie.ReggieApplication" />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+@@ -173,11 +182,24 @@
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State />
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="master" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
+           </value>
+         </entry>
+       </map>
+     </option>
++    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="2023.09.02-1 初始化项目" />
+@@ -188,6 +210,48 @@
+     <MESSAGE value="2023.09.10-6 编写EmployeeController的登陆方法" />
+     <MESSAGE value="2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试" />
+     <option name="LAST_COMMIT_MESSAGE" value="2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试" />
++  </component>
++  <component name="WindowStateProjectService">
++    <state x="249" y="7" key="#Project_Structure" timestamp="1695086559980">
++      <screen x="0" y="0" width="1536" height="864" />
++    </state>
++    <state x="249" y="7" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1695086559980" />
++    <state width="1491" height="470" key="GridCell.Tab.0.bottom" timestamp="1695086800712">
++      <screen x="0" y="0" width="1536" height="864" />
++    </state>
++    <state width="1491" height="470" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1695086800712" />
++    <state width="1491" height="470" key="GridCell.Tab.0.center" timestamp="1695086800712">
++      <screen x="0" y="0" width="1536" height="864" />
++    </state>
++    <state width="1491" height="470" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1695086800712" />
++    <state width="1491" height="470" key="GridCell.Tab.0.left" timestamp="1695086800712">
++      <screen x="0" y="0" width="1536" height="864" />
++    </state>
++    <state width="1491" height="470" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1695086800712" />
++    <state width="1491" height="470" key="GridCell.Tab.0.right" timestamp="1695086800712">
++      <screen x="0" y="0" width="1536" height="864" />
++    </state>
++    <state width="1491" height="470" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1695086800712" />
++    <state width="1491" height="470" key="GridCell.Tab.1.bottom" timestamp="1695086800712">
++      <screen x="0" y="0" width="1536" height="864" />
++    </state>
++    <state width="1491" height="470" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1695086800712" />
++    <state width="1491" height="470" key="GridCell.Tab.1.center" timestamp="1695086800712">
++      <screen x="0" y="0" width="1536" height="864" />
++    </state>
++    <state width="1491" height="470" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1695086800712" />
++    <state width="1491" height="470" key="GridCell.Tab.1.left" timestamp="1695086800712">
++      <screen x="0" y="0" width="1536" height="864" />
++    </state>
++    <state width="1491" height="470" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1695086800712" />
++    <state width="1491" height="470" key="GridCell.Tab.1.right" timestamp="1695086800712">
++      <screen x="0" y="0" width="1536" height="864" />
++    </state>
++    <state width="1491" height="470" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1695086800712" />
++    <state x="573" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1695086878930">
++      <screen x="0" y="0" width="1536" height="864" />
++    </state>
++    <state x="573" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1695086878930" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>

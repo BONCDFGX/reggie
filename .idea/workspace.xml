@@ -28,10 +28,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/809b736f-9993-42b3-9577-591a643c9ba2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/809b736f-9993-42b3-9577-591a643c9ba2.xml" afterDir="false" />
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.20-23 CategoryController实现新增分类，分页查询功能">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/entity/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/entity/Setmeal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/mapper/DishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/mapper/SetmealMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/DishService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/SetmealService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/DishServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/SetmealServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/CategoryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +77,11 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MavenProject\reggie\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bonc.reggie.service.impl" />
+      <recent name="com.bonc.reggie.service" />
+      <recent name="com.bonc.reggie.mapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\BoncCode\learn\reggie\src\main\java\com\bonc\reggie\entity" />
@@ -197,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695181987535</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2023.09.20-23 CategoryController实现新增分类，分页查询功能">
+      <created>1695202044307</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1695202044308</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,45 +243,46 @@
     <MESSAGE value="2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试" />
     <MESSAGE value="2023.09.19-20 编写MetaObjectHandler类实现公共字段自动填充" />
     <MESSAGE value="2023.09.20-22 搭建分类管理骨架，编写实体类，mapper，service和controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.20-22 搭建分类管理骨架，编写实体类，mapper，service和controller" />
+    <MESSAGE value="2023.09.20-23 CategoryController实现新增分类，分页查询功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.20-23 CategoryController实现新增分类，分页查询功能" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1695115786415">
+    <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1695203030300">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1695115786415" />
-    <state width="1491" height="354" key="GridCell.Tab.0.bottom" timestamp="1695201504177">
+    <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1695203030300" />
+    <state width="1491" height="354" key="GridCell.Tab.0.bottom" timestamp="1695201959989">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="354" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1695201504177" />
-    <state width="1491" height="354" key="GridCell.Tab.0.center" timestamp="1695201504177">
+    <state width="1491" height="354" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1695201959989" />
+    <state width="1491" height="354" key="GridCell.Tab.0.center" timestamp="1695201959989">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="354" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1695201504177" />
-    <state width="1491" height="354" key="GridCell.Tab.0.left" timestamp="1695201504177">
+    <state width="1491" height="354" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1695201959989" />
+    <state width="1491" height="354" key="GridCell.Tab.0.left" timestamp="1695201959989">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="354" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1695201504177" />
-    <state width="1491" height="354" key="GridCell.Tab.0.right" timestamp="1695201504177">
+    <state width="1491" height="354" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1695201959989" />
+    <state width="1491" height="354" key="GridCell.Tab.0.right" timestamp="1695201959989">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="354" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1695201504177" />
-    <state width="1491" height="354" key="GridCell.Tab.1.bottom" timestamp="1695201504177">
+    <state width="1491" height="354" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1695201959989" />
+    <state width="1491" height="354" key="GridCell.Tab.1.bottom" timestamp="1695201959989">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="354" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1695201504177" />
-    <state width="1491" height="354" key="GridCell.Tab.1.center" timestamp="1695201504177">
+    <state width="1491" height="354" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1695201959989" />
+    <state width="1491" height="354" key="GridCell.Tab.1.center" timestamp="1695201959989">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="354" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1695201504177" />
-    <state width="1491" height="354" key="GridCell.Tab.1.left" timestamp="1695201504177">
+    <state width="1491" height="354" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1695201959989" />
+    <state width="1491" height="354" key="GridCell.Tab.1.left" timestamp="1695201959989">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="354" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1695201504177" />
-    <state width="1491" height="354" key="GridCell.Tab.1.right" timestamp="1695201504177">
+    <state width="1491" height="354" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1695201959989" />
+    <state width="1491" height="354" key="GridCell.Tab.1.right" timestamp="1695201959989">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="354" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1695201504177" />
+    <state width="1491" height="354" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1695201959989" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1695201610682">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -272,10 +291,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="270" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1695187043490" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1695187218713">
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1695202703716">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1695187218713" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1695202703716" />
     <state x="529" y="144" key="git4idea.branch.GitSmartOperationDialog" timestamp="1695186810376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

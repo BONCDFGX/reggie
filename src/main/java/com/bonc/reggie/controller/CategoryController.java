@@ -8,10 +8,7 @@ import com.bonc.reggie.service.CategoryService;
 import com.bonc.reggie.service.impl.CategoryServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -30,7 +27,7 @@ public class CategoryController {
      * @param category
      * @return
      */
-    @RequestMapping
+    @PostMapping
     public R<String> save(@RequestBody Category category){
         log.info("category: {}",category.toString());
         categoryService.save(category);
@@ -44,7 +41,7 @@ public class CategoryController {
      * @param pageSize
      * @return
      */
-    @RequestMapping("/page")
+    @GetMapping("/page")
     public R<Page> page(int page,int pageSize){
         // 分页构造器
         Page<Category> pageInfo = new Page<>(page,pageSize);
@@ -69,6 +66,19 @@ public class CategoryController {
         log.info("删除分类，id为: {}",ids);
         categoryService.remove(ids);
         return R.success("分类信息删除成功");
+    }
+
+
+    /**
+     * 根据id修改分类信息
+     * @param category
+     * @return
+     */
+    @PutMapping
+    public R<String> update(@RequestBody Category category){
+        log.info(category.toString());
+        categoryService.updateById(category);
+        return R.success("分类信息修改成功");
     }
 
 }

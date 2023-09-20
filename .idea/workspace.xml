@@ -28,13 +28,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.20-24 编写实体类Dish和Setmeal，搭建mapper，service，serviceImpl框架">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/common/CustomException.java" afterDir="false" />
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.20-25 实现CategoryController的根据id删除分类功能，需要在CategoryService中自己编写删除方法，编写CustomException类自定义业务异常">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/common/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/common/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/common/MyMetaObjectHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/common/MyMetaObjectHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/CategoryServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1695203714567</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="2023.09.20-25 实现CategoryController的根据id删除分类功能，需要在CategoryService中自己编写删除方法，编写CustomException类自定义业务异常">
+      <created>1695210239977</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1695210239978</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,45 +253,54 @@
     <MESSAGE value="2023.09.20-22 搭建分类管理骨架，编写实体类，mapper，service和controller" />
     <MESSAGE value="2023.09.20-23 CategoryController实现新增分类，分页查询功能" />
     <MESSAGE value="2023.09.20-24 编写实体类Dish和Setmeal，搭建mapper，service，serviceImpl框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.20-24 编写实体类Dish和Setmeal，搭建mapper，service，serviceImpl框架" />
+    <MESSAGE value="2023.09.20-25 实现CategoryController的根据id删除分类功能，需要在CategoryService中自己编写删除方法，编写CustomException类自定义业务异常" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.20-25 实现CategoryController的根据id删除分类功能，需要在CategoryService中自己编写删除方法，编写CustomException类自定义业务异常" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1695205873283">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1695205873283" />
-    <state width="1491" height="231" key="GridCell.Tab.0.bottom" timestamp="1695209976985">
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog" timestamp="1695211923330">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="231" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1695209976985" />
-    <state width="1491" height="231" key="GridCell.Tab.0.center" timestamp="1695209976985">
+    <state x="93" y="93" width="1350" height="678" key="DiffContextDialog/0.0.1536.864@0.0.1536.864" timestamp="1695211923330" />
+    <state x="579" y="333" key="Github.CreateGistDialog" timestamp="1695211345878">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="231" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1695209976985" />
-    <state width="1491" height="231" key="GridCell.Tab.0.left" timestamp="1695209976985">
+    <state x="579" y="333" key="Github.CreateGistDialog/0.0.1536.864@0.0.1536.864" timestamp="1695211345878" />
+    <state width="1491" height="377" key="GridCell.Tab.0.bottom" timestamp="1695211854310">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="231" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1695209976985" />
-    <state width="1491" height="231" key="GridCell.Tab.0.right" timestamp="1695209976985">
+    <state width="1491" height="377" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1695211854310" />
+    <state width="1491" height="377" key="GridCell.Tab.0.center" timestamp="1695211854310">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="231" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1695209976985" />
-    <state width="1491" height="231" key="GridCell.Tab.1.bottom" timestamp="1695209976985">
+    <state width="1491" height="377" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1695211854310" />
+    <state width="1491" height="377" key="GridCell.Tab.0.left" timestamp="1695211854310">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="231" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1695209976985" />
-    <state width="1491" height="231" key="GridCell.Tab.1.center" timestamp="1695209976985">
+    <state width="1491" height="377" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1695211854310" />
+    <state width="1491" height="377" key="GridCell.Tab.0.right" timestamp="1695211854310">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="231" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1695209976985" />
-    <state width="1491" height="231" key="GridCell.Tab.1.left" timestamp="1695209976985">
+    <state width="1491" height="377" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1695211854310" />
+    <state width="1491" height="377" key="GridCell.Tab.1.bottom" timestamp="1695211854310">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="231" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1695209976985" />
-    <state width="1491" height="231" key="GridCell.Tab.1.right" timestamp="1695209976985">
+    <state width="1491" height="377" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1695211854310" />
+    <state width="1491" height="377" key="GridCell.Tab.1.center" timestamp="1695211854310">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1491" height="231" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1695209976985" />
+    <state width="1491" height="377" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1695211854310" />
+    <state width="1491" height="377" key="GridCell.Tab.1.left" timestamp="1695211854310">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="377" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1695211854310" />
+    <state width="1491" height="377" key="GridCell.Tab.1.right" timestamp="1695211854310">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1491" height="377" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1695211854310" />
     <state width="1491" height="372" key="GridCell.Tab.2.bottom" timestamp="1695209553911">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -312,14 +325,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="270" y="77" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1695187043490" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1695206601955">
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1695210249764">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1695206601955" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1695210249764" />
     <state x="529" y="144" key="git4idea.branch.GitSmartOperationDialog" timestamp="1695186810376">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="529" y="144" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.864@0.0.1536.864" timestamp="1695186810376" />
+    <state x="523" y="275" width="672" height="678" key="search.everywhere.popup" timestamp="1695211922162">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="523" y="275" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1695211922162" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

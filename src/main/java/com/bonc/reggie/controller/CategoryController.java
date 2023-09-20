@@ -8,9 +8,12 @@ import com.bonc.reggie.service.CategoryService;
 import com.bonc.reggie.service.impl.CategoryServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 分类管理
@@ -53,6 +56,19 @@ public class CategoryController {
         // 进行分页查询
         categoryService.page(pageInfo,lambdaQueryWrapper);
         return R.success(pageInfo);
+    }
+
+
+    /**
+     * 根据id删除分类
+     * @param ids
+     * @return
+     */
+    @DeleteMapping
+    public R<String> delete(Long ids){
+        log.info("删除分类，id为: {}",ids);
+        categoryService.remove(ids);
+        return R.success("分类信息删除成功");
     }
 
 }

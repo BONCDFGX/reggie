@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.21-27 前端添加upload.html文件上传下载页面">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/CommonContorller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/bonc/test/UploadFileTest.java" afterDir="false" />
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.21-28 后端添加CommonController类，实现文件上传功能，添加UploadFileTest类，测试文件后缀名截取">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/CommonContorller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/CommonContorller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +150,7 @@
       <workItem from="1695052771669" duration="293000" />
       <workItem from="1695053149969" duration="483000" />
       <workItem from="1695127148985" duration="2426000" />
-      <workItem from="1695254280329" duration="9791000" />
+      <workItem from="1695254280329" duration="11165000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -354,7 +352,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695298786258</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="2023.09.21-28 后端添加CommonController类，实现文件上传功能，添加UploadFileTest类，测试文件后缀名截取">
+      <option name="closed" value="true" />
+      <created>1695311148865</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1695311148865</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +400,8 @@
     <MESSAGE value="2023.09.18-20 编写MetaObjectHandler类，实现公共字段自动填充" />
     <MESSAGE value="2023.09.21-26 前端添加upload.html文件上传下载页面" />
     <MESSAGE value="2023.09.21-27 前端添加upload.html文件上传下载页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.21-27 前端添加upload.html文件上传下载页面" />
+    <MESSAGE value="2023.09.21-28 后端添加CommonController类，实现文件上传功能，添加UploadFileTest类，测试文件后缀名截取" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.21-28 后端添加CommonController类，实现文件上传功能，添加UploadFileTest类，测试文件后缀名截取" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

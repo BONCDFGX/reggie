@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.21-28 后端添加CommonController类，实现文件上传功能，添加UploadFileTest类，测试文件后缀名截取">
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.22-29 CommonController实现文件下载功能">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/entity/DishFlavor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/mapper/DishFlavorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/DishFlavorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/DishFlavorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/CommonContorller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/CommonContorller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +63,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/MavenProject/reggie/src/main/resources/backend/page/demo",
+    "last_opened_file_path": "D:/MavenProject/reggie/src/main/java/com/bonc/reggie/entity",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,14 +81,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\entity" />
       <recent name="D:\MavenProject\reggie\src\main\resources\backend\page\demo" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\common" />
-      <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\entity" />
       <recent name="D:\MavenProject\reggie\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\common" />
       <recent name="D:\MavenProject\reggie\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bonc.reggie.service.impl" />
+      <recent name="com.bonc.reggie.service" />
+      <recent name="com.bonc.reggie.mapper" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ReggieApplication">
@@ -150,7 +160,8 @@
       <workItem from="1695052771669" duration="293000" />
       <workItem from="1695053149969" duration="483000" />
       <workItem from="1695127148985" duration="2426000" />
-      <workItem from="1695254280329" duration="11165000" />
+      <workItem from="1695254280329" duration="11838000" />
+      <workItem from="1695344095415" duration="696000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -360,7 +371,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695311148865</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="2023.09.22-29 CommonController实现文件下载功能">
+      <option name="closed" value="true" />
+      <created>1695312550777</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1695312550777</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,7 +420,8 @@
     <MESSAGE value="2023.09.21-26 前端添加upload.html文件上传下载页面" />
     <MESSAGE value="2023.09.21-27 前端添加upload.html文件上传下载页面" />
     <MESSAGE value="2023.09.21-28 后端添加CommonController类，实现文件上传功能，添加UploadFileTest类，测试文件后缀名截取" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.21-28 后端添加CommonController类，实现文件上传功能，添加UploadFileTest类，测试文件后缀名截取" />
+    <MESSAGE value="2023.09.22-29 CommonController实现文件下载功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.22-29 CommonController实现文件下载功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

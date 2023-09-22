@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 /**
  * 分类管理
@@ -79,6 +80,26 @@ public class CategoryController {
         log.info(category.toString());
         categoryService.updateById(category);
         return R.success("分类信息修改成功");
+    }
+
+
+    /**
+     * 根据条件查询分类数据
+     * @param category
+     * @return
+     */
+    @GetMapping("/list")
+    public R<List<Category>> getList(@RequestBody Category category){
+        // 条件构造器
+        LambdaQueryWrapper<Category> lambdaQueryWrapper = new LambdaQueryWrapper<>();
+        // 添加条件
+        lambdaQueryWrapper.eq(category.getType()!=null,Category::getType,category.getType());
+        // 添加排序条件
+        lambdaQueryWrapper.orderByAsc(Category::getSort).orderByDesc(Category::getUpdateTime);
+
+        List<Category> list = categoryService.list(lambdaQueryWrapper);
+
+        return R.success(list);
     }
 
 }

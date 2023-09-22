@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.22-30 新增DishFlavor菜品口味实体类，搭建mapper，service，serviceImpl框架">
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.22-31 CategoryController实现根据条件查询分类数据功能">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/dto/DishDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/ReggieApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/ReggieApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/DishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/DishServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +63,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/MavenProject/reggie/src/main/java/com/bonc/reggie/entity",
+    "last_opened_file_path": "D:/MavenProject/reggie/src/main/java/com/bonc/reggie/dto",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,6 +81,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\dto" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\entity" />
       <recent name="D:\MavenProject\reggie\src\main\resources\backend\page\demo" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\common" />
@@ -156,7 +162,7 @@
       <workItem from="1695053149969" duration="483000" />
       <workItem from="1695127148985" duration="2426000" />
       <workItem from="1695254280329" duration="11838000" />
-      <workItem from="1695344095415" duration="2769000" />
+      <workItem from="1695344095415" duration="7818000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -382,7 +388,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695344960173</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="2023.09.22-31 CategoryController实现根据条件查询分类数据功能">
+      <option name="closed" value="true" />
+      <created>1695349158445</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1695349158445</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +414,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.02-1 初始化项目" />
     <MESSAGE value="2023.09.09-2 导入前端静态资源" />
     <MESSAGE value="2023.09.09-3 编写配置类WebMvcConfig，映射前端资源" />
     <MESSAGE value="2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法" />
@@ -425,7 +438,8 @@
     <MESSAGE value="2023.09.21-28 后端添加CommonController类，实现文件上传功能，添加UploadFileTest类，测试文件后缀名截取" />
     <MESSAGE value="2023.09.22-29 CommonController实现文件下载功能" />
     <MESSAGE value="2023.09.22-30 新增DishFlavor菜品口味实体类，搭建mapper，service，serviceImpl框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.22-30 新增DishFlavor菜品口味实体类，搭建mapper，service，serviceImpl框架" />
+    <MESSAGE value="2023.09.22-31 CategoryController实现根据条件查询分类数据功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.22-31 CategoryController实现根据条件查询分类数据功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -89,7 +89,7 @@ public class CategoryController {
      * @return
      */
     @GetMapping("/list")
-    public R<List<Category>> getList(@RequestBody Category category){
+    public R<List<Category>> list(Category category){
         // 条件构造器
         LambdaQueryWrapper<Category> lambdaQueryWrapper = new LambdaQueryWrapper<>();
         // 添加条件

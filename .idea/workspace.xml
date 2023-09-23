@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.23-36 DishController尝试实现批量删除菜品功能，未完成">
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.23-37 DishController完善批量删除菜品功能，实现批量停售起售菜品功能">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/SetmealController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/dto/SetmealDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/entity/SetmealDish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/mapper/SetmealDishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/SetmealDishService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/SetmealDishServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/DishController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/DishServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +163,7 @@
       <workItem from="1695127148985" duration="2426000" />
       <workItem from="1695254280329" duration="11838000" />
       <workItem from="1695344095415" duration="11744000" />
-      <workItem from="1695432725242" duration="12239000" />
+      <workItem from="1695432725242" duration="16530000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -433,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695442984002</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="2023.09.23-37 DishController完善批量删除菜品功能，实现批量停售起售菜品功能">
+      <option name="closed" value="true" />
+      <created>1695449419431</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1695449419431</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试" />
     <MESSAGE value="2023.09.10-8 实现EmployeeController的退出功能" />
     <MESSAGE value="2023.09.11-9 搭建LoginCheckFilter过滤器，检查用户是否登录" />
     <MESSAGE value="2023.09.12-10 完善LoginCheckFilter过滤器，实现检查登录功能" />
@@ -476,7 +487,8 @@
     <MESSAGE value="2023.09.23-34 DishController实现根据id查询对应的菜品信息和菜品口味功能" />
     <MESSAGE value="2023.09.23-35 DishController实现修改菜品味功能" />
     <MESSAGE value="2023.09.23-36 DishController尝试实现批量删除菜品功能，未完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.23-36 DishController尝试实现批量删除菜品功能，未完成" />
+    <MESSAGE value="2023.09.23-37 DishController完善批量删除菜品功能，实现批量停售起售菜品功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.23-37 DishController完善批量删除菜品功能，实现批量停售起售菜品功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

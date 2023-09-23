@@ -5,6 +5,8 @@ import com.bonc.reggie.dto.DishDto;
 import com.bonc.reggie.entity.Dish;
 import com.bonc.reggie.entity.DishFlavor;
 
+import java.util.List;
+
 public interface DishService extends IService<Dish>{
 
     // 新增菜品，同时插入菜品对应的口味数据，需要操作两张表: dish,dish_flavor
@@ -15,4 +17,7 @@ public interface DishService extends IService<Dish>{
 
     // 更新菜品，同时更新菜品对应的口味数据，需要操作两张表: dish,dish_flavor
     public void updateWithFlavor(DishDto dishDto);
+
+    // 更新菜品，同时更新菜品对应的口味数据，需要操作两张表: dish,dish_flavor
+    public void deleteWithFlavor(List<Long> ids);
 }

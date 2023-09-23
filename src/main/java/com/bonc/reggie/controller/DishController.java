@@ -116,4 +116,17 @@ public class DishController {
         return R.success("修改菜品成功");
     }
 
+
+    /**
+     * 批量删除菜品
+     * @param ids
+     * @return
+     */
+    @DeleteMapping
+    public R<String> delete(@RequestParam("ids") List<Long> ids){
+        log.info("删除菜品: {}",ids.toString());
+        dishService.deleteWithFlavor(ids);
+        return R.success("删除菜品成功");
+    }
+
 }

@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.23-37 DishController完善批量删除菜品功能，实现批量停售起售菜品功能">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/SetmealController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/dto/SetmealDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/entity/SetmealDish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/mapper/SetmealDishMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/SetmealDishService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/SetmealDishServiceImpl.java" afterDir="false" />
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.23-38 新增SetmealDish实体类和SetmealDto类，搭建MVC框架">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/DishController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +158,7 @@
       <workItem from="1695127148985" duration="2426000" />
       <workItem from="1695254280329" duration="11838000" />
       <workItem from="1695344095415" duration="11744000" />
-      <workItem from="1695432725242" duration="16530000" />
+      <workItem from="1695432725242" duration="17799000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -445,7 +440,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695449419431</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="2023.09.23-38 新增SetmealDish实体类和SetmealDto类，搭建MVC框架">
+      <option name="closed" value="true" />
+      <created>1695481812742</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1695481812742</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.10-8 实现EmployeeController的退出功能" />
     <MESSAGE value="2023.09.11-9 搭建LoginCheckFilter过滤器，检查用户是否登录" />
     <MESSAGE value="2023.09.12-10 完善LoginCheckFilter过滤器，实现检查登录功能" />
     <MESSAGE value="2023.09.17-11 实现employeecontroller添加员工功能" />
@@ -488,7 +490,8 @@
     <MESSAGE value="2023.09.23-35 DishController实现修改菜品味功能" />
     <MESSAGE value="2023.09.23-36 DishController尝试实现批量删除菜品功能，未完成" />
     <MESSAGE value="2023.09.23-37 DishController完善批量删除菜品功能，实现批量停售起售菜品功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.23-37 DishController完善批量删除菜品功能，实现批量停售起售菜品功能" />
+    <MESSAGE value="2023.09.23-38 新增SetmealDish实体类和SetmealDto类，搭建MVC框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.23-38 新增SetmealDish实体类和SetmealDto类，搭建MVC框架" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

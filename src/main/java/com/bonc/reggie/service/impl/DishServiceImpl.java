@@ -97,12 +97,13 @@ public class DishServiceImpl extends ServiceImpl<DishMapper, Dish> implements Di
     }
 
     @Override
+    @Transactional // 事务控制,保持一致性
     public void deleteWithFlavor(List<Long> ids) {
         // 删除dish表
         this.removeByIds(ids);
         // 删除dish_flavor表
         LambdaQueryWrapper<DishFlavor> dishFlavorLambdaQueryWrapper = new LambdaQueryWrapper<>();
-        dishFlavorLambdaQueryWrapper.eq(DishFlavor::getDishId,ids);
+        dishFlavorLambdaQueryWrapper.in(DishFlavor::getDishId,ids);
         dishFlavorService.remove(dishFlavorLambdaQueryWrapper);
     }
 }

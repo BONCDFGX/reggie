@@ -1,5 +1,6 @@
 package com.bonc.reggie.controller;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.bonc.reggie.common.R;
 import com.bonc.reggie.dto.DishDto;
@@ -127,6 +128,29 @@ public class DishController {
         log.info("删除菜品: {}",ids.toString());
         dishService.deleteWithFlavor(ids);
         return R.success("删除菜品成功");
+    }
+
+
+    /**
+     * 批量更改菜品售卖状态
+     * @param ids
+     * @return
+     */
+    @PostMapping("/status/{status}")
+    public R<String> updateStatus(@PathVariable int status,@RequestParam("ids") List<Long> ids){
+        log.info("status: {}",status);
+        log.info("ids: {}",ids.toArray());
+
+        // 构造更新条件构造器
+        UpdateWrapper<Dish> dishUpdateWrapper = new UpdateWrapper<>();
+        // 创建更新条件
+        dishUpdateWrapper.in("id",ids);
+        // 设置更新后的值
+        dishUpdateWrapper.set("status",status);
+
+        dishService.update(dishUpdateWrapper);
+
+        return R.success("状态更新成功");
     }
 
 }

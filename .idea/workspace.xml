@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.23-33 DishController实现菜品信息分页查询功能">
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.23-34 DishController实现根据id查询对应的菜品信息和菜品口味功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/DishController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/DishService.java" afterDir="false" />
@@ -160,7 +160,7 @@
       <workItem from="1695127148985" duration="2426000" />
       <workItem from="1695254280329" duration="11838000" />
       <workItem from="1695344095415" duration="11744000" />
-      <workItem from="1695432725242" duration="5697000" />
+      <workItem from="1695432725242" duration="7253000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -410,7 +410,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695437829291</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="2023.09.23-34 DishController实现根据id查询对应的菜品信息和菜品口味功能">
+      <option name="closed" value="true" />
+      <created>1695440591071</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1695440591071</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +436,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.10-4 搭建mapper，service，serviceImpl，controller三层MVC架构，并编写Employee的三层接口方法" />
     <MESSAGE value="2023.09.10-5 创建common文件夹存放通用类，创建通用返回类R" />
     <MESSAGE value="2023.09.10-6 编写EmployeeController的登陆方法" />
     <MESSAGE value="2023.09.10-7 测试登录功能，将前端的超时设置加大两个零，方便后端断点测试" />
@@ -453,7 +460,8 @@
     <MESSAGE value="2023.09.22-31 CategoryController实现根据条件查询分类数据功能" />
     <MESSAGE value="2023.09.22-32 新增DishController类，实现新增菜品功能，新增DishDto类(dto: Data Transfer Object,即数据传输对象,DTO 是用于在不同系统或层之间传输数据的对象,DTO 通常只包含需要传输的数据，不包含任何业务逻辑或状态),DishService新增saveWithFlavor方法，实现同时对dish和dish_flavor的插入操作，ReggieApplication启动类添加EnableTransactionManagement注解，开启事务支持" />
     <MESSAGE value="2023.09.23-33 DishController实现菜品信息分页查询功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.23-33 DishController实现菜品信息分页查询功能" />
+    <MESSAGE value="2023.09.23-34 DishController实现根据id查询对应的菜品信息和菜品口味功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.23-34 DishController实现根据id查询对应的菜品信息和菜品口味功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

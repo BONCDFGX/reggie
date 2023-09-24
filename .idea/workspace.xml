@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-43 新增User实体类，搭建MVC框架">
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-44 LoginCheckFilter过滤器放行移动段发送短信和移动端登录请求">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/utils/SMSUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/utils/ValidateCodeUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/filter/LoginCheckFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,40 +49,40 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/MavenProject/reggie/src/main/java/com/bonc/reggie/entity",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "D:/MavenProject/reggie/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "spring.configuration.checksum": "3acf5c7b740d6e2538f3a7b88cf069b3",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MavenProject/reggie/src/main/java/com/bonc/reggie/utils&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/MavenProject/reggie/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3acf5c7b740d6e2538f3a7b88cf069b3&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\utils" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\entity" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\dto" />
       <recent name="D:\MavenProject\reggie\src\main\resources\backend\page\demo" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\common" />
-      <recent name="D:\MavenProject\reggie\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\common" />
@@ -159,7 +161,8 @@
       <workItem from="1695254280329" duration="11838000" />
       <workItem from="1695344095415" duration="11744000" />
       <workItem from="1695432725242" duration="18242000" />
-      <workItem from="1695517038382" duration="9922000" />
+      <workItem from="1695517038382" duration="11458000" />
+      <workItem from="1695543365360" duration="2758000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -489,7 +492,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695528545149</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="2023.09.24-44 LoginCheckFilter过滤器放行移动段发送短信和移动端登录请求">
+      <option name="closed" value="true" />
+      <created>1695528994700</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1695528994700</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.18-15 EmployeeController实现员工分页查询" />
     <MESSAGE value="2023.09.18-16 EmployeeController实现根据id修改员工信息" />
     <MESSAGE value="2023.09.18-17 添加JacksonObjectMapper类，实现对象映射器，基于jackson将Java对象转为json，或者将json转为Java对象" />
     <MESSAGE value="2023.09.18-17 添加JacksonObjectMapper类，实现对象映射器，将long型数据转为string传给前端" />
@@ -532,7 +542,8 @@
     <MESSAGE value="2023.09.24-41 SetmealController实现套餐分页查询功能" />
     <MESSAGE value="2023.09.24-42 SetmealController实现删除套餐功能" />
     <MESSAGE value="2023.09.24-43 新增User实体类，搭建MVC框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-43 新增User实体类，搭建MVC框架" />
+    <MESSAGE value="2023.09.24-44 LoginCheckFilter过滤器放行移动段发送短信和移动端登录请求" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-44 LoginCheckFilter过滤器放行移动段发送短信和移动端登录请求" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

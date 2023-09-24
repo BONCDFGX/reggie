@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.23-39 DishController实现根据条件查询对应的菜品数据功能">
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-40 SetmealController实现新增套餐功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/SetmealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/SetmealService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/SetmealService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/SetmealServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/SetmealServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +159,7 @@
       <workItem from="1695254280329" duration="11838000" />
       <workItem from="1695344095415" duration="11744000" />
       <workItem from="1695432725242" duration="18242000" />
-      <workItem from="1695517038382" duration="2243000" />
+      <workItem from="1695517038382" duration="4246000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -459,7 +457,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695484177412</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="2023.09.24-40 SetmealController实现新增套餐功能">
+      <option name="closed" value="true" />
+      <created>1695519401268</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1695519401268</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -477,7 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.12-10 完善LoginCheckFilter过滤器，实现检查登录功能" />
     <MESSAGE value="2023.09.17-11 实现employeecontroller添加员工功能" />
     <MESSAGE value="2023.09.17-13 完善GlobalExceptionHandler" />
     <MESSAGE value="2023.09.18-14 创建MybatisPlusConfig配置类，配置MybatisPlus的分页插件" />
@@ -502,7 +507,8 @@
     <MESSAGE value="2023.09.23-37 DishController完善批量删除菜品功能，实现批量停售起售菜品功能" />
     <MESSAGE value="2023.09.23-38 新增SetmealDish实体类和SetmealDto类，搭建MVC框架" />
     <MESSAGE value="2023.09.23-39 DishController实现根据条件查询对应的菜品数据功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.23-39 DishController实现根据条件查询对应的菜品数据功能" />
+    <MESSAGE value="2023.09.24-40 SetmealController实现新增套餐功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-40 SetmealController实现新增套餐功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

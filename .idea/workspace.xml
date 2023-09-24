@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-50 改造DishController的lisg方法，使返回值为带上口味数据的DishDto类">
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-52 新增ShoppingCart实体类">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/ShoppingCartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/mapper/ShoppingCartMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/ShoppingCartService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/ShoppingCartServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/SetmealController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +61,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/MavenProject/reggie/src/main/resources/front",
+    "last_opened_file_path": "D:/MavenProject/reggie/src/main/java/com/bonc/reggie/entity",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,9 +79,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\entity" />
       <recent name="D:\MavenProject\reggie\src\main\resources\front" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\controller" />
-      <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\entity" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\utils" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\dto" />
     </key>
@@ -160,15 +163,7 @@
       <workItem from="1695344095415" duration="11744000" />
       <workItem from="1695432725242" duration="18242000" />
       <workItem from="1695517038382" duration="11458000" />
-      <workItem from="1695543365360" duration="8907000" />
-    </task>
-    <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
-      <option name="closed" value="true" />
-      <created>1693667598087</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1693667598087</updated>
+      <workItem from="1695543365360" duration="9823000" />
     </task>
     <task id="LOCAL-00002" summary="2023.09.09-2 导入前端静态资源">
       <option name="closed" value="true" />
@@ -546,7 +541,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695561591176</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="2023.09.24-51 SetmealController实现根据条件查询套餐数据功能">
+      <option name="closed" value="true" />
+      <created>1695564618925</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1695564618925</updated>
+    </task>
+    <task id="LOCAL-00050" summary="2023.09.24-52 新增ShoppingCart实体类">
+      <option name="closed" value="true" />
+      <created>1695565267738</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1695565267739</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,8 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.21-26 前端添加upload.html文件上传下载页面" />
-    <MESSAGE value="2023.09.21-27 前端添加upload.html文件上传下载页面" />
     <MESSAGE value="2023.09.21-28 后端添加CommonController类，实现文件上传功能，添加UploadFileTest类，测试文件后缀名截取" />
     <MESSAGE value="2023.09.22-29 CommonController实现文件下载功能" />
     <MESSAGE value="2023.09.22-30 新增DishFlavor菜品口味实体类，搭建mapper，service，serviceImpl框架" />
@@ -589,7 +598,9 @@
     <MESSAGE value="2023.09.24-48 搭建AddressBook的MVC框架" />
     <MESSAGE value="2023.09.24-49 新增AddressBookController类" />
     <MESSAGE value="2023.09.24-50 改造DishController的lisg方法，使返回值为带上口味数据的DishDto类" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-50 改造DishController的lisg方法，使返回值为带上口味数据的DishDto类" />
+    <MESSAGE value="2023.09.24-51 SetmealController实现根据条件查询套餐数据功能" />
+    <MESSAGE value="2023.09.24-52 新增ShoppingCart实体类" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-52 新增ShoppingCart实体类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

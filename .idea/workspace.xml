@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-42 SetmealController实现删除套餐功能">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-43 新增User实体类，搭建MVC框架">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/filter/LoginCheckFilter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +159,7 @@
       <workItem from="1695254280329" duration="11838000" />
       <workItem from="1695344095415" duration="11744000" />
       <workItem from="1695432725242" duration="18242000" />
-      <workItem from="1695517038382" duration="9431000" />
+      <workItem from="1695517038382" duration="9922000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -484,7 +481,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695526209586</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="2023.09.24-43 新增User实体类，搭建MVC框架">
+      <option name="closed" value="true" />
+      <created>1695528545149</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1695528545149</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +507,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.18-14 创建MybatisPlusConfig配置类，配置MybatisPlus的分页插件" />
     <MESSAGE value="2023.09.18-15 EmployeeController实现员工分页查询" />
     <MESSAGE value="2023.09.18-16 EmployeeController实现根据id修改员工信息" />
     <MESSAGE value="2023.09.18-17 添加JacksonObjectMapper类，实现对象映射器，基于jackson将Java对象转为json，或者将json转为Java对象" />
@@ -527,7 +531,8 @@
     <MESSAGE value="2023.09.24-40 SetmealController实现新增套餐功能" />
     <MESSAGE value="2023.09.24-41 SetmealController实现套餐分页查询功能" />
     <MESSAGE value="2023.09.24-42 SetmealController实现删除套餐功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-42 SetmealController实现删除套餐功能" />
+    <MESSAGE value="2023.09.24-43 新增User实体类，搭建MVC框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-43 新增User实体类，搭建MVC框架" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

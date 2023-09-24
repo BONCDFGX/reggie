@@ -7,10 +7,10 @@ import com.bonc.reggie.entity.ShoppingCart;
 import com.bonc.reggie.service.ShoppingCartService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDateTime;
+import java.util.List;
 
 @RestController
 @RequestMapping("/shoppingCart")
@@ -58,6 +58,7 @@ public class ShoppingCartController {
         }else {
             // 如果不存在，则添加到购物车，数量默认为一
             shoppingCart.setNumber(1);
+            shoppingCart.setCreateTime(LocalDateTime.now());
             shoppingCartService.save(shoppingCart);
             cartServiceOne = shoppingCart;
         }
@@ -65,5 +66,25 @@ public class ShoppingCartController {
         return R.success(cartServiceOne);
 
     }
+
+
+    /**
+     * 查看购物车
+     * @return
+     */
+    @GetMapping("/list")
+    public R<List<ShoppingCart>> list(){
+
+        log.info("查看购物车...");
+
+        LambdaQueryWrapper<ShoppingCart> shoppingCartLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        shoppingCartLambdaQueryWrapper.eq(ShoppingCart::getUserId,BaseContext.getCurrentId());
+        shoppingCartLambdaQueryWrapper.orderByAsc(ShoppingCart::getCreateTime);
+
+        List<ShoppingCart> list = shoppingCartService.list(shoppingCartLambdaQueryWrapper);
+
+        return R.success(list);
+    }
+
 
 }

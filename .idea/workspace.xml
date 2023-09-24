@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-44 LoginCheckFilter过滤器放行移动段发送短信和移动端登录请求">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/utils/SMSUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/utils/ValidateCodeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-46 新增UserController类，实现发送手机短信验证码，移动端用户登录功能" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,7 +157,7 @@
       <workItem from="1695344095415" duration="11744000" />
       <workItem from="1695432725242" duration="18242000" />
       <workItem from="1695517038382" duration="11458000" />
-      <workItem from="1695543365360" duration="2758000" />
+      <workItem from="1695543365360" duration="2999000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -500,7 +495,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695528994700</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="2023.09.24-45 新增SMSUtils类实现阿里云短信发送，新增ValidateCodeUtils类作为验证码生成工具类">
+      <option name="closed" value="true" />
+      <created>1695546337785</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1695546337785</updated>
+    </task>
+    <task id="LOCAL-00044" summary="2023.09.24-46 新增UserController类，实现发送手机短信验证码，移动端用户登录功能">
+      <option name="closed" value="true" />
+      <created>1695546373416</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1695546373416</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,8 +529,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.18-16 EmployeeController实现根据id修改员工信息" />
-    <MESSAGE value="2023.09.18-17 添加JacksonObjectMapper类，实现对象映射器，基于jackson将Java对象转为json，或者将json转为Java对象" />
     <MESSAGE value="2023.09.18-17 添加JacksonObjectMapper类，实现对象映射器，将long型数据转为string传给前端" />
     <MESSAGE value="2023.09.18-18 WebMvcConfigurationSupport扩展MVC框架的消息转换器,将JacksonObjectMapper扩展到MVC框架中" />
     <MESSAGE value="2023.09.18-19 EmployeeController实现根据id查询员工信息" />
@@ -543,7 +552,9 @@
     <MESSAGE value="2023.09.24-42 SetmealController实现删除套餐功能" />
     <MESSAGE value="2023.09.24-43 新增User实体类，搭建MVC框架" />
     <MESSAGE value="2023.09.24-44 LoginCheckFilter过滤器放行移动段发送短信和移动端登录请求" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-44 LoginCheckFilter过滤器放行移动段发送短信和移动端登录请求" />
+    <MESSAGE value="2023.09.24-45 新增SMSUtils类实现阿里云短信发送，新增ValidateCodeUtils类作为验证码生成工具类" />
+    <MESSAGE value="2023.09.24-46 新增UserController类，实现发送手机短信验证码，移动端用户登录功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-46 新增UserController类，实现发送手机短信验证码，移动端用户登录功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

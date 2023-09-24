@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-48 搭建AddressBook的MVC框架">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/AddressBookController.java" afterDir="false" />
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-49 新增AddressBookController类">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/front/cartData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/DishController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/front/api/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/front/api/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +60,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/MavenProject/reggie/src/main/java/com/bonc/reggie/controller",
+    "last_opened_file_path": "D:/MavenProject/reggie/src/main/resources/front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,11 +78,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MavenProject\reggie\src\main\resources\front" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\controller" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\entity" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\utils" />
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\dto" />
-      <recent name="D:\MavenProject\reggie\src\main\resources\backend\page\demo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\common" />
@@ -160,7 +162,7 @@
       <workItem from="1695344095415" duration="11744000" />
       <workItem from="1695432725242" duration="18242000" />
       <workItem from="1695517038382" duration="11458000" />
-      <workItem from="1695543365360" duration="4272000" />
+      <workItem from="1695543365360" duration="7672000" />
     </task>
     <task id="LOCAL-00001" summary="2023.09.02-1 初始化项目">
       <option name="closed" value="true" />
@@ -530,7 +532,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695549748139</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="2023.09.24-49 新增AddressBookController类">
+      <option name="closed" value="true" />
+      <created>1695550165606</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1695550165606</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -548,7 +558,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.18-19 EmployeeController实现根据id查询员工信息" />
     <MESSAGE value="2023.09.18-20 编写MetaObjectHandler类，实现公共字段自动填充" />
     <MESSAGE value="2023.09.21-26 前端添加upload.html文件上传下载页面" />
     <MESSAGE value="2023.09.21-27 前端添加upload.html文件上传下载页面" />
@@ -573,7 +582,8 @@
     <MESSAGE value="2023.09.24-46 新增UserController类，实现发送手机短信验证码，移动端用户登录功能" />
     <MESSAGE value="2023.09.24-47 新增AddressBook实体类" />
     <MESSAGE value="2023.09.24-48 搭建AddressBook的MVC框架" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-48 搭建AddressBook的MVC框架" />
+    <MESSAGE value="2023.09.24-49 新增AddressBookController类" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-49 新增AddressBookController类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

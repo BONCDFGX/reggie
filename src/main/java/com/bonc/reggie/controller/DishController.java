@@ -6,6 +6,7 @@ import com.bonc.reggie.common.R;
 import com.bonc.reggie.dto.DishDto;
 import com.bonc.reggie.entity.Category;
 import com.bonc.reggie.entity.Dish;
+import com.bonc.reggie.entity.DishFlavor;
 import com.bonc.reggie.service.CategoryService;
 import com.bonc.reggie.service.DishFlavorService;
 import com.bonc.reggie.service.DishService;
@@ -154,13 +155,37 @@ public class DishController {
     }
 
 
+//    /**
+//     * 根据条件查询对应的菜品数据
+//     * @param dish
+//     * @return
+//     */
+//    @GetMapping("/list")
+//    public R<List<Dish>> list(Dish dish){
+//
+//        // 构造查询条件
+//        LambdaQueryWrapper<Dish> dishLambdaQueryWrapper = new LambdaQueryWrapper<>();
+//        dishLambdaQueryWrapper.eq(dish.getCategoryId()!=null,Dish::getCategoryId,dish.getCategoryId());
+//        // 添加条件，查询状态为1(起售状态)的菜品
+//        dishLambdaQueryWrapper.eq(Dish::getStatus,1);
+//
+//        // 添加排序条件
+//        dishLambdaQueryWrapper.orderByAsc(Dish::getSort).orderByDesc(Dish::getUpdateTime);
+//
+//        List<Dish> list = dishService.list(dishLambdaQueryWrapper);
+//
+//        return R.success(list);
+//
+//    }
+
+
     /**
      * 根据条件查询对应的菜品数据
      * @param dish
      * @return
      */
     @GetMapping("/list")
-    public R<List<Dish>> list(Dish dish){
+    public R<List<DishDto>> list(Dish dish){
 
         // 构造查询条件
         LambdaQueryWrapper<Dish> dishLambdaQueryWrapper = new LambdaQueryWrapper<>();
@@ -173,7 +198,31 @@ public class DishController {
 
         List<Dish> list = dishService.list(dishLambdaQueryWrapper);
 
-        return R.success(list);
+        List<DishDto> dishDtos = list.stream().map((item) -> {
+            DishDto dishDto = new DishDto();
+            BeanUtils.copyProperties(item, dishDto);
+            Long categoryId = item.getCategoryId();// 分类id
+            // 根据id查询分类对象
+            Category category = categoryService.getById(categoryId);
+            if(category!=null){
+                String categoryName = category.getName();
+                dishDto.setCategoryName(categoryName);
+            }
+
+            // 当前菜品的id
+            Long dishId = item.getId();
+
+            LambdaQueryWrapper<DishFlavor> dishFlavorLambdaQueryWrapper = new LambdaQueryWrapper<>();
+            dishFlavorLambdaQueryWrapper.eq(DishFlavor::getDishId,dishId);
+            // SQL: select * from dish_flavor where dish_id = ?
+            List<DishFlavor> dishFlavors = dishFlavorService.list(dishFlavorLambdaQueryWrapper);
+
+            dishDto.setFlavors(dishFlavors);
+
+            return dishDto;
+        }).collect(Collectors.toList());
+
+        return R.success(dishDtos);
 
     }
 

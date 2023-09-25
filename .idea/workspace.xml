@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.25-58 新增OrdersController，实现用户下单功能">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/OrderDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.25-59 新增OrderDetailController" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -163,15 +160,7 @@
       <workItem from="1695543365360" duration="13834000" />
       <workItem from="1695569579927" duration="205000" />
       <workItem from="1695596959008" duration="547000" />
-      <workItem from="1695653220303" duration="5138000" />
-    </task>
-    <task id="LOCAL-00009" summary="2023.09.10-8 实现EmployeeController的退出功能">
-      <option name="closed" value="true" />
-      <created>1694324235902</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1694324235903</updated>
+      <workItem from="1695653220303" duration="5173000" />
     </task>
     <task id="LOCAL-00010" summary="2023.09.11-9 搭建LoginCheckFilter过滤器，检查用户是否登录">
       <option name="closed" value="true" />
@@ -557,7 +546,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695660225851</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="2023.09.25-59 新增OrderDetailController">
+      <option name="closed" value="true" />
+      <created>1695660319746</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1695660319746</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +572,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.23-35 DishController实现修改菜品味功能" />
     <MESSAGE value="2023.09.23-36 DishController尝试实现批量删除菜品功能，未完成" />
     <MESSAGE value="2023.09.23-37 DishController完善批量删除菜品功能，实现批量停售起售菜品功能" />
     <MESSAGE value="2023.09.23-38 新增SetmealDish实体类和SetmealDto类，搭建MVC框架" />
@@ -600,7 +596,8 @@
     <MESSAGE value="2023.09.24-56 ShoppingCartController实现清空购物车功能" />
     <MESSAGE value="2023.09.25-57 新增Orders和OrderDetail实体类，搭建MVC框架" />
     <MESSAGE value="2023.09.25-58 新增OrdersController，实现用户下单功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.25-58 新增OrdersController，实现用户下单功能" />
+    <MESSAGE value="2023.09.25-59 新增OrderDetailController" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.25-59 新增OrderDetailController" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

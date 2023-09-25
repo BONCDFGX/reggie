@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-55 ShoppingCartController实现查看购物车功能">
+    <list default="true" id="4747c58c-b163-4135-895a-5ccfae0df555" name="Changes" comment="2023.09.24-56 ShoppingCartController实现清空购物车功能">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/entity/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/entity/Orders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/mapper/OrdersMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/OrderDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/OrdersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/OrderDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/service/impl/OrdersServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bonc/reggie/controller/ShoppingCartController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,33 +54,33 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/MavenProject/reggie/src/main/java/com/bonc/reggie/entity",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "D:/MavenProject/reggie/src/main/java/org/example/Main.java",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "spring.configuration.checksum": "3acf5c7b740d6e2538f3a7b88cf069b3",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/MavenProject/reggie/src/main/java/com/bonc/reggie/entity&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/MavenProject/reggie/src/main/java/org/example/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;3acf5c7b740d6e2538f3a7b88cf069b3&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\MavenProject\reggie\src\main\java\com\bonc\reggie\entity" />
@@ -160,15 +167,10 @@
       <workItem from="1695344095415" duration="11744000" />
       <workItem from="1695432725242" duration="18242000" />
       <workItem from="1695517038382" duration="11458000" />
-      <workItem from="1695543365360" duration="13169000" />
-    </task>
-    <task id="LOCAL-00006" summary="2023.09.10-5 创建common文件夹存放通用类，创建通用返回类R">
-      <option name="closed" value="true" />
-      <created>1694305900212</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1694305900212</updated>
+      <workItem from="1695543365360" duration="13834000" />
+      <workItem from="1695569579927" duration="205000" />
+      <workItem from="1695596959008" duration="547000" />
+      <workItem from="1695653220303" duration="1408000" />
     </task>
     <task id="LOCAL-00007" summary="2023.09.10-6 编写EmployeeController的登陆方法">
       <option name="closed" value="true" />
@@ -554,7 +556,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695568372886</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="2023.09.24-56 ShoppingCartController实现清空购物车功能">
+      <option name="closed" value="true" />
+      <created>1695568781689</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1695568781689</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -572,7 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="2023.09.22-32 新增DishController类，实现新增菜品功能，新增DishDto类(dto: Data Transfer Object,即数据传输对象,DTO 是用于在不同系统或层之间传输数据的对象,DTO 通常只包含需要传输的数据，不包含任何业务逻辑或状态),DishService新增saveWithFlavor方法，实现同时对dish和dish_flavor的插入操作，ReggieApplication启动类添加EnableTransactionManagement注解，开启事务支持" />
     <MESSAGE value="2023.09.23-33 DishController实现菜品信息分页查询功能" />
     <MESSAGE value="2023.09.23-34 DishController实现根据id查询对应的菜品信息和菜品口味功能" />
     <MESSAGE value="2023.09.23-35 DishController实现修改菜品味功能" />
@@ -597,7 +606,8 @@
     <MESSAGE value="2023.09.24-53 ShoppingCartController实现添加购物车功能" />
     <MESSAGE value="2023.09.24-54 ShoppingCartController实现添加购物车功能" />
     <MESSAGE value="2023.09.24-55 ShoppingCartController实现查看购物车功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-55 ShoppingCartController实现查看购物车功能" />
+    <MESSAGE value="2023.09.24-56 ShoppingCartController实现清空购物车功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="2023.09.24-56 ShoppingCartController实现清空购物车功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

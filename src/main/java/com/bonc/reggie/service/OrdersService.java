@@ -6,4 +6,10 @@ import com.bonc.reggie.entity.User;
 
 public interface OrdersService extends IService<Orders>{
 
+    /**
+     * 用户下单
+     * @param orders
+     */
+    public void submit(Orders orders);
+
 }
